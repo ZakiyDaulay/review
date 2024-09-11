@@ -27,6 +27,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1","zakiy-makarim-mentalhealthtracker.pbp.cs.ui.ac.id"]
+
 CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://pbp.cs.ui.ac.id/zakiy.makarim/mentalhealthtracker", "https://pbp.cs.ui.ac.id/zakiy.makarim/mentalhealthtracker"]
 
 
