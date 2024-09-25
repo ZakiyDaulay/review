@@ -19,7 +19,7 @@ def show_main(request):
     context = {
         'name': request.user.username,
         'class': 'PBP KKI',
-        'npm': '2306123456',
+        'npm': '2306170130',
         'mood_entries': mood_entries,
         'last_login': request.COOKIES.get('last_login', 'No recent login information')
     }
