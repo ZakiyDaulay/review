@@ -1,6 +1,5 @@
 from django.urls import path
-from main.views import show_main,create_mood_entry,show_xml,show_xml_by_id,register,login_user,logout_user
-
+from main.views import show_main,create_mood_entry,show_xml,show_xml_by_id,register,login_user,logout_user,edit_mood,delete_mood
 
 app_name = 'main'
 
@@ -11,5 +10,7 @@ urlpatterns = [
     path('logout/', logout_user, name='logout'),
     path('create-mood-entry',create_mood_entry,name='create_mood_entry'),
     path('login/', login_user, name='login'),
+    path('delete/<uuid:id>', delete_mood, name='delete_mood'),
+    path('edit-mood/<uuid:id>', edit_mood, name='edit_mood'),
     path('register/', register, name='register')
 ]
