@@ -27,8 +27,6 @@ def show_main(request):
     }
 
     return render(request, "main.html", context)
-
-
 def create_mood_entry(request):
     form = MoodEntryForm(request.POST or None)
 
